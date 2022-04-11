@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "husky": "^7.0.4"
+  },
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.0"
+  }
+}
