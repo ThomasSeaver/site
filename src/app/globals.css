@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+	@apply bg-zinc-100 dark:bg-zinc-900;
+}
+
+@supports (backdrop-filter: blur(4px)) {
+	.header-blur {
+		backdrop-filter: blur(4px);
+		background-color: rgba(255, 255, 255, 0.97);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.header-blur {
+			background-color: rgba(9, 9, 11, 0.97);
+		}
+	}
+}
